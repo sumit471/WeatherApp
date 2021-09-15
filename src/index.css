@@ -1,0 +1,60 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{
+    font-family: 'Lobster', cursive;
+    
+}
+body{
+   background-image: url("https://nordicapis.com/wp-content/uploads/5-Best-Free-and-Paid-Weather-APIs-2019-e1587582023501.png");
+}
+
+.main_div
+{
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align:center;
+}
+.content
+{
+   background-color: skyblue;
+   border-radius: 4px;
+   height: 80vh;
+   width: 25%;
+   box-shadow: 5px 5px 25px -5px black;
+   
+}
+input{
+   border: none;
+   height: 30px;
+   top: 10px;
+   background: transparent;
+   font-size: 20px;
+   font-weight: 500;
+   width: 60%;
+   outline: none;
+   border-bottom: 2px solid green;
+}
+
+.SearchBar {
+   position: absolute;
+  
+   height: 100px;
+   width: 50px;
+}
+
+.navi
+{
+   box-shadow: 5px 5px 25px -5px black;
+   background-color: cadetblue;
+}
+.nofound{
+      padding-top:20px ;
+}
+.heading
+{
+   color: aqua;
+}
