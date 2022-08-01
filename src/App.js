@@ -1,19 +1,20 @@
 import React, { useEffect, useState } from "react";
 import "../node_modules/bootstrap/dist/css/bootstrap.css";
       
-const App=()=>{
-   const[city , changecity]=useState("");
-   const[search , changesearch]=useState("");
+const App =()=>{
+   const[city , changecity] = useState("");  // object for whole info of city's current weather condition
+   const[search , changesearch]=useState("");  //  name of searched city
 
-   useEffect(()=>{
-     const fetchApi= async()=>{
+   useEffect( () => {
+     const fetchApi = async()=>{
        const url=`https://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=69e75b08a5e09fa26892aaa8afc630bc`
        const response = await fetch (url);
        const resJson = await response.json();
         changecity(resJson.main);
      };
+
      fetchApi();
-   },[search])
+   }, [search])   
 
    return( 
      <>
